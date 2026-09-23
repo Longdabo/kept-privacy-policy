@@ -30,7 +30,7 @@
   <main>
     <article>
       <h1>Privacy Policy for Kept</h1>
-      <p class="meta">Effective date: September 19, 2026 · Last updated: September 19, 2026</p>
+      <p class="meta">Effective date: September 19, 2026 · Last updated: September 23, 2026</p>
 
       <p class="summary"><strong>Privacy summary:</strong> Kept processes notification history on your Android device. The developer does not receive, upload, sell, or share your notification data. Kept contains no advertising or analytics SDKs and does not operate a backend server.</p>
 
@@ -42,9 +42,10 @@
       <ul>
         <li>the name and package identifier of the app that posted a notification;</li>
         <li>notification titles, message text, expanded text, conversation titles, people fields, and timestamps;</li>
-        <li>notification deletion or recall status and locally referenced notification media, when available; and</li>
-        <li>your in-app preferences, such as filtering, retention, theme, screenshot protection, and app-lock settings.</li>
+        <li>notification deletion or recall status; and</li>
+        <li>your in-app preferences, such as filtering, theme, screenshot protection, and app-lock settings.</li>
       </ul>
+      <p>If you choose the app-discovery feature in Settings, Kept reads the installed apps visible to it through Android and saves their names and package identifiers locally so you can manage notification filters. You can also import a password-protected ZIP backup you select; its notification records and app names are added to Kept's local database.</p>
       <p>Notification content may include personal or sensitive information sent by other apps or people. Kept only processes this content to provide the notification-history, search, filtering, statistics, and deleted-message detection features you choose to use.</p>
 
       <h2>3. Permissions and device features</h2>
@@ -52,18 +53,18 @@
         <li><strong>Notification access:</strong> lets Kept read notifications and detect when notifications are removed. You can revoke this access at any time in Android settings.</li>
         <li><strong>Post notifications:</strong> lets Kept show optional alerts, including deleted-message alerts.</li>
         <li><strong>Biometric/device authentication:</strong> may be used for the optional app lock. Authentication is handled by Android; Kept does not receive or store biometric templates or biometric data.</li>
-        <li><strong>Foreground service:</strong> supports notification monitoring while the feature is enabled.</li>
+        <li><strong>Notification listener:</strong> Android runs Kept's notification listener after you grant notification access. You can turn off recording in Kept or revoke access in Android settings.</li>
       </ul>
 
       <h2>4. Local processing and storage</h2>
-      <p>Kept stores its database and preferences in the app's private storage on your device. Android cloud backup is disabled for the app. The developer does not operate a server for Kept and does not remotely collect notification content, device identifiers, IP addresses, usage analytics, crash reports, location, contacts, or advertising data.</p>
+      <p>Kept stores its database and preferences in the app's private storage on your device. The app disables Android cloud backup. On some Android devices, a user-initiated device-to-device transfer may still copy app data to a new device. Kept does not sync data to a developer server and does not remotely collect notification content, device identifiers, IP addresses, usage analytics, crash reports, location, contacts, or advertising data.</p>
 
       <h2>5. Sharing and third parties</h2>
-      <p>Kept does not sell or share your data with the developer, advertisers, analytics providers, data brokers, or other third parties. The app contains no advertising, analytics, or cloud-storage SDKs.</p>
-      <p>If you choose to export your notification database, Kept creates a password-encrypted ZIP file and opens Android's system share sheet. The file is disclosed only to the destination you select. That destination's privacy practices apply after you share the file. Keep the export password secure and share exports only with services or people you trust.</p>
+      <p>Kept does not automatically transmit your notification data to the developer, advertisers, analytics providers, data brokers, or other third parties. The app contains no advertising, analytics, or cloud-storage SDKs.</p>
+      <p>If you choose to export your notification database, Kept creates a password-encrypted ZIP file in its private storage and opens Android's system share sheet. The file is disclosed only to the destination you select. That destination's privacy practices apply after you share the file. Keep the export password secure and share exports only with services or people you trust.</p>
 
       <h2>6. Retention and deletion</h2>
-      <p>Notification history remains on your device until it is deleted through Kept, cleared through Android's app settings, or removed when the app is uninstalled. Kept provides controls to delete stored data and to stop future notification recording. Because the developer does not receive or hold this data, the developer cannot retrieve or delete it remotely.</p>
+      <p>Notification history remains in Kept's local database until you delete records in the app, clear its storage in Android settings, or uninstall it. The in-app “Clear all data” action removes database records; it does not currently remove preferences or ZIP files created by export. To remove those copies from Kept's private storage, clear the app's storage or uninstall it. Copies you shared with another app or person must be deleted at that destination. You can stop future recording in Kept or revoke notification access in Android settings. Kept does not currently enforce an automatic deletion period. Because the developer does not receive or hold this data, the developer cannot retrieve or delete it remotely.</p>
 
       <h2>7. Security</h2>
       <p>Kept uses Android app-private storage, disables Android cloud backup, and offers optional device authentication and screenshot blocking. User-initiated exports are protected with AES ZIP encryption. No method of storage is completely secure, so you should protect access to your device and exported files.</p>
@@ -75,13 +76,13 @@
       <p>You control the information processed by Kept on your device. You can disable recording, revoke notification access, delete stored data, clear the app's storage, or uninstall the app. Depending on where you live, privacy laws may provide additional rights; however, the developer cannot access data that never leaves your device.</p>
 
       <h2>10. International data transfers</h2>
-      <p>Kept does not transmit personal data to the developer or a developer-operated server, so the developer does not perform international transfers of your notification data. A transfer may occur only if you deliberately export and share a file to a destination in another country.</p>
+      <p>Kept does not transmit personal data to the developer or a developer-operated server, so the developer does not perform international transfers of your notification data. Data may move between countries if you use Android's device migration or deliberately export and share a file to a destination in another country.</p>
 
       <h2>11. Changes to this policy</h2>
       <p>This policy may be updated when Kept's features or data practices change. The latest version will remain available at this URL, with the updated date shown at the top.</p>
 
       <h2>12. Contact</h2>
-      <p>For privacy questions or requests, contact the developer using the developer contact address shown on Kept's Google Play listing. You may also review the policy source and report policy issues through the <a href="https://github.com/Longdabo/kept-privacy-policy">Kept privacy-policy repository</a>. Do not include notification content or other sensitive information in a public GitHub issue.</p>
+      <p>For privacy questions or requests, contact Longdabo at <a href="mailto:longdabo@gmail.com">longdabo@gmail.com</a>. You may also review the policy source through the <a href="https://github.com/Longdabo/kept-privacy-policy">Kept privacy-policy repository</a>. Do not include notification content or other sensitive information in a public GitHub issue.</p>
     </article>
   </main>
 </body>
