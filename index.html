@@ -30,7 +30,7 @@
   <main>
     <article>
       <h1>Privacy Policy for Kept</h1>
-      <p class="meta">Effective date: September 19, 2026 · Last updated: September 23, 2026</p>
+      <p class="meta">Effective date: September 19, 2026 · Last updated: November 21, 2026</p>
 
       <p class="summary"><strong>Privacy summary:</strong> Kept processes notification history on your Android device. The developer does not receive, upload, sell, or share your notification data. Kept contains no advertising or analytics SDKs and does not operate a backend server.</p>
 
@@ -42,11 +42,12 @@
       <ul>
         <li>the name and package identifier of the app that posted a notification;</li>
         <li>notification titles, message text, expanded text, conversation titles, people fields, and timestamps;</li>
-        <li>notification deletion or recall status; and</li>
+        <li>notification dismissal or recall status and, where available, identifiers used to group messages by conversation;</li>
+        <li>supported images, audio, video, or other attachments made available to Kept through a notification, where the installed version supports saving them; and</li>
         <li>your in-app preferences, such as filtering, theme, screenshot protection, and app-lock settings.</li>
       </ul>
-      <p>If you choose the app-discovery feature in Settings, Kept reads the installed apps visible to it through Android and saves their names and package identifiers locally so you can manage notification filters. You can also import a password-protected ZIP backup you select; its notification records and app names are added to Kept's local database.</p>
-      <p>Notification content may include personal or sensitive information sent by other apps or people. Kept only processes this content to provide the notification-history, search, filtering, statistics, and deleted-message detection features you choose to use.</p>
+      <p>Kept can read the installed apps visible to it through Android and save their names and package identifiers locally to manage notification filters. You can also import a password-protected ZIP backup you select; Kept restores its notification records, app information, and supported attachments included in the backup.</p>
+      <p>Notification content may include personal or sensitive information sent by other apps or people. Kept processes this content to provide notification history, search, filtering, statistics, recall detection, and local viewing of saved messages and attachments. Attachment availability depends on what the source app makes available through Android notifications.</p>
 
       <h2>3. Permissions and device features</h2>
       <ul>
@@ -57,14 +58,16 @@
       </ul>
 
       <h2>4. Local processing and storage</h2>
-      <p>Kept stores its database and preferences in the app's private storage on your device. The app disables Android cloud backup. On some Android devices, a user-initiated device-to-device transfer may still copy app data to a new device. Kept does not sync data to a developer server and does not remotely collect notification content, device identifiers, IP addresses, usage analytics, crash reports, location, contacts, or advertising data.</p>
+      <p>Kept stores its database, preferences, and saved notification attachments in the app's private storage on your device. The app disables Android cloud backup. On some Android devices, a user-initiated device-to-device transfer may still copy app data to a new device. Kept does not sync data to a developer server and does not remotely collect notification content, device identifiers, IP addresses, usage analytics, crash reports, location, contacts, or advertising data.</p>
 
       <h2>5. Sharing and third parties</h2>
       <p>Kept does not automatically transmit your notification data to the developer, advertisers, analytics providers, data brokers, or other third parties. The app contains no advertising, analytics, or cloud-storage SDKs.</p>
-      <p>If you choose to export your notification database, Kept creates a password-encrypted ZIP file in its private storage and opens Android's system share sheet. The file is disclosed only to the destination you select. That destination's privacy practices apply after you share the file. Keep the export password secure and share exports only with services or people you trust.</p>
+      <p>If you choose to export your notification history, Kept creates a password-encrypted ZIP file in its private storage and opens Android's system share sheet. The ZIP contains notification records, app information, and saved attachments that are available when the backup is created.</p>
+      <p>You can also choose to open an attachment in another app, share it through Android, or save a copy to your device or another location you select. The receiving app or storage provider handles that copy under its own privacy practices. Keep your backup password secure and share files only with people or services you trust.</p>
 
       <h2>6. Retention and deletion</h2>
-      <p>Notification history remains in Kept's local database until you delete records in the app, clear its storage in Android settings, or uninstall it. The in-app “Clear all data” action removes database records; it does not currently remove preferences or ZIP files created by export. To remove those copies from Kept's private storage, clear the app's storage or uninstall it. Copies you shared with another app or person must be deleted at that destination. You can stop future recording in Kept or revoke notification access in Android settings. Kept does not currently enforce an automatic deletion period. Because the developer does not receive or hold this data, the developer cannot retrieve or delete it remotely.</p>
+      <p>Kept checks for expired notification records when it starts. The default retention period is 30 days, and a preference already saved on your device can affect how long records are kept. You can also delete individual records or clear the history in the app. When records are deleted, Kept attempts to remove associated attachments from its private storage.</p>
+      <p>The in-app “Clear all data” action removes database records and attempts to remove their attachments. Preferences and previously created ZIP backups can remain in Kept's private storage until you clear its storage in Android settings or uninstall it. Copies saved or shared outside Kept must be deleted separately at their destination. You can stop future recording in Kept or revoke notification access in Android settings. The developer cannot retrieve or delete the records remotely.</p>
 
       <h2>7. Security</h2>
       <p>Kept uses Android app-private storage, disables Android cloud backup, and offers optional device authentication and screenshot blocking. User-initiated exports are protected with AES ZIP encryption. No method of storage is completely secure, so you should protect access to your device and exported files.</p>
